@@ -13,6 +13,7 @@
 :root {
   --color-background: #fffdf7;
   --color-black: #212121;
+  --color-total-black: #000;
   --color-text: #4f4f4f;
   --color-text-out: #90908e;
   --color-primary: #ffbf00;
@@ -201,6 +202,9 @@ b {
   font-size: 40px;
   margin: 5px 0 30px 0;
 }
+.container-menu {
+  margin-bottom: 40px;
+}
 
 .card-icon {
   display: flex;
@@ -227,4 +231,67 @@ b {
   height: 500px;
   margin: 0 auto;
   background-image: url(../img/bg-icons-2.png);
+}
+
+.foodtime {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.card-item {
+  height: 360px;
+}
+.card-item .img-produto img {
+  width: 100%;
+  border-radius: 11px;
+}
+.card-item .title-produto {
+  color: var(--color-black);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 40px;
+  margin-bottom: 0;
+}
+
+.card-item .price-produto {
+  color: var(--color-primary);
+  font-size: 24px;
+}
+
+.card-item .add-cart {
+  /* display: none; */
+  height: 30px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-minus {
+  color: var(--color-total-black);
+  padding: 5px 7px;
+  border: 2px solid var(--color-total-black);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.btn-plus {
+  color: var(--color-total-black);
+  padding: 5px 7px;
+  border: 2px solid var(--color-total-black);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-number-items {
+  color: var(--color-total-black);
+  padding: 2px 15px;
+  border: 2px solid var(--color-total-black);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 14px;
+  cursor: pointer;
 }
